@@ -6,8 +6,8 @@ const findThirdLargest = (arr) =>{
 
     for(i=0; i<arr.length; i++){
         if (arr[i] > first){
-            second = first;
             third = second;
+            second = first;
             first = arr[i];
         }else if (arr[i] < first && arr[i] > second){
             third = second;
