@@ -7,12 +7,12 @@ function moveToEnd(arr) {
       arr[count++] = arr[i];
     }
 
-    while (count === arr.length - 1) {
+    while (count < arr.length - 1) {
       arr[count++] = 0;
     }
   }
 }
 
-const arr = [1, 0, 3, 4, 5];
+const arr = [10, 0, 3, 4, 5];
 moveToEnd(arr);
 console.log(arr);
